@@ -1,1 +1,1 @@
-This is an optimization text file.
+This is an optimization text file and from conflict branch.
