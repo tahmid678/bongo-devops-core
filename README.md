@@ -90,4 +90,16 @@
 - `git commit`
 - `git merge conflict` and it raises a conflict.
 - In VSCode, I kept the both changes as a resolution.
-- Later, tracked the changes before making a final commit. 
+- Later, tracked the changes before making a final commit.
+
+### Task 10
+- At this point, my HEAD is pointing to the latest commit which has index 0.
+- After `git reset --hard HEAD~1`, head starts to point to the previous commit.
+- I can verify it by looking at the `README.md` file and it contains nothing except a Header in it.
+- I can also verify as the `git reset --hard HEAD~1` says my `origin/main` is ahead of 1 commit as it should be.
+- To go back to the latest commit, I used `git reflog` and it shows all the changes along with their commit reference number.
+- Now, I copied the latest `commit ref number` and ran the `git reset --hard <copied ref number>`.
+- Eventually, the HEAD now starts to point to the latest commit again and all the texts in the README.md file came back.
+
+
+## **N.B**: *Other than these activities, I have made some changes to this repository. Like, I pushed the feature/system-optimization branch to the remote repository and made a PR there. Then fetched the remote/orgin to the local repo and made my local HEAD point to the fetched remote/origin so that my local/main gets synced with the remote/main. I also made some other changes for the necessity of the assignment that might contradict with the commit history.* 
